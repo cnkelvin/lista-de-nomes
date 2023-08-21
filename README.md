@@ -55,7 +55,7 @@ A Lista de Presença serve para você marcar sua presença naquele horário do d
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através do link abaixo:
+Você pode visualizar o layout atual do projeto através do link abaixo:
 
-[not found](https://notfound.com/)
+[- Clique aqui](https://lista-de-nomes.vercel.app/)
 
