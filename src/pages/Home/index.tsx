@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './style.css';
 
-import { Card } from '../../components/Card';
+import { Card, CardProps } from '../../components/Card';
 
 export function Home() {
   const [studentName, setStudentName] = useState("");
-	const [students, setStudents] = useState([]);
+	const [students, setStudents] = useState<CardProps[]>([]);
 	const [user, setUser] = useState({ name: '', avatar: '' })
 
   function handleAddStudent() {
