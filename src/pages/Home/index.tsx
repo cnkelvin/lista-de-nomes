@@ -32,6 +32,11 @@ export function Home() {
   	});
   }, []);
 
+  function toggleMode() {
+      const html = document.documentElement
+  html.classList.toggle('light')
+  }
+
   return (
     <div className="container">
    		<header>
@@ -50,6 +55,11 @@ export function Home() {
       <button type="button" onClick={handleAddStudent}>
         Adicionar
       </button>
+
+    <div id="switch" onClick={toggleMode}>
+      <button></button>
+      <span></span>
+    </div>
 
       {students.map((student) => (
         <Card 
