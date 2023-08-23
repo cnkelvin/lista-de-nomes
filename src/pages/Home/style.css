@@ -149,7 +149,7 @@
   }
 }
 
-	@media (max-width: 428px) {
+	@media (max-width: 430px) {
 		.container input, #add-student{
 			width: 90vw;
 		}
