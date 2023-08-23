@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import './style.css';
+import { Sun, MoonStars } from 'phosphor-react'
 
 import { Card, CardProps } from '../../components/Card';
 
 export function Home() {
   const [studentName, setStudentName] = useState("");
+  const [isThemeDark, setIsThemeDark] = useState(true)
 	const [students, setStudents] = useState<CardProps[]>([]);
 	const [user, setUser] = useState({ name: '', avatar: '' })
 
@@ -35,6 +37,7 @@ export function Home() {
   function toggleMode() {
       const html = document.documentElement
   html.classList.toggle('light')
+  setIsThemeDark(!isThemeDark)
   }
 
   return (
@@ -52,12 +55,16 @@ export function Home() {
         placeholder="Digite o nome..."
         onChange={(e) => setStudentName(e.target.value)}
       />
-      <button type="button" onClick={handleAddStudent}>
+      <button id="add-student" type="button" onClick={handleAddStudent}>
         Adicionar
       </button>
 
     <div id="switch" onClick={toggleMode}>
-      <button></button>
+      <button>
+        <div className="svg-icons">
+           {isThemeDark ? <MoonStars color="#000000" size={16} /> : <Sun color="#000000" size={16} /> }
+        </div>
+      </button>
       <span></span>
     </div>
 

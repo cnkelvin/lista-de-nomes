@@ -5,7 +5,6 @@
 	--surface-color: rgba(255, 255, 255, 0.1);
  	--surface-color-hover: rgba(255, 255, 255, 0.05);
  	--highlight-color: rgba(255, 255, 255, 0.2);
- 	--switch-bg-url: url('../../assets/Sun.svg')
 }
 
  	.light {
@@ -14,7 +13,6 @@
  		--stroke-color: rgba(0, 0, 0, 0.5);
  		--surface-color: rgba(0, 0, 0, 0.05);
  		--highlight-color: rgba(0, 0, 0, 0.1);
- 		--switch-bg-url: url('../../assets/MoonStars.svg');
  	}
 
 /* container */
@@ -27,7 +25,7 @@
 
 .container header {
 	width: 50%;
-	margin: 84px 0 24px;
+	margin: 54px 0 24px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -91,10 +89,14 @@
 	#switch button {
 		width: 30px;
 		height: 50px;
-		background: white var(--switch-bg-url) no-repeat center; 
+		background-color: #ECECEC;
 		border: 0;
 		border-radius: 100%;
 		cursor: pointer;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
 		position: absolute;
 		top: 30%;
@@ -124,6 +126,10 @@
 		border-radius: 9999px;
 	}
 
+	.svg-icons {
+		margin-top: 3px;
+	}
+
 	/* animation */
 	@keyframes slide-in {
 		from {
@@ -141,4 +147,18 @@
   to {
     left: 0;
   }
+}
+
+	@media (max-width: 420px) {
+		.container input, #add-student{
+			width: 90vw;
+		}
+		h1 {
+			font-size: 16px;
+
+		}
+		.container header {
+			width: 100%;
+			justify-content: space-around;
+		}
 }
