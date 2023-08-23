@@ -1,7 +1,7 @@
 <h1 align="center"> Lista de Presença </h1>
 
 <p align="center">
-Projeto feito durante a trilha Especializar, promovida pela Rocketseat no módulo "Fundamentos do ReactJS" com o professor Rodrigo. <br/>
+Projeto feito durante a trilha Especializar, promovida pela Rocketseat no módulo "Fundamentos do ReactJS" com o professor Rodrigo Gonçalves. <br/>
 <a href="https://app.rocketseat.com.br/discover-2022/trails/especializar">Conheça a trilha especializar</a>
 </p>
 
