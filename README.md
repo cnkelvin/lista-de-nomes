@@ -50,13 +50,13 @@ A Lista de Presença serve para você marcar sua presença naquele horário do d
 - [ ] Estilização e ambientação do site
 - [ ] Navbar
 - [ ] Sessão "Sobre"
-- [ ] Dark Mode
-- [ ] Responsividade do site
+- [x] Dark Mode
+- [x] Responsividade do site
 - [x] Hospedagem no Github Pages
 
 ## 🔖 Layout
 
 Você pode visualizar o layout atual do projeto através do link abaixo:
 
-[- Clique aqui](https://lista-de-nomes.vercel.app/)
+[Clique aqui](https://lista-de-nomes.vercel.app/)
 
